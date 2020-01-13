@@ -1,29 +1,66 @@
- ![](logo.png)
+<p align=center>
+	<img src="image/AidLearning-1.png" >
+	
+</p>
+
+  <p align="center">
+    Linux+AI+Python+Gui 4in1 Environments Running on the Android . <a href='intr.md'>[中文版]</a> <a href='README.md'>[English]
+  </p>
+  <p align="center">
+    <a href="https://travis-ci.org/lc-soft/LCUI"><img src="https://travis-ci.org/lc-soft/LCUI.png?branch=master" alt="Build Status"></a>
+    <img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Coverage Status">
+    <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/lc-soft/LCUI.svg" alt="License"></a>
+    <a href="https://github.com/aidlearning/AidLearning-FrameWork/releases">
+    <img src="https://img.shields.io/github/v/tag/aidlearning/AidLearning-FrameWork" > </a>
+    <img src="https://img.shields.io/badge/repo%20size-37%20MB-blue" alt="Repo size">
+    <img src="https://img.shields.io/badge/code%20size-11.83%20MB-blue" alt="Code size">
+<img src="https://img.shields.io/github/forks/aidlearning/AidLearning-FrameWork?style=flat" alt="Fork">
+<img src="https://img.shields.io/github/stars/aidlearning/AidLearning-FrameWork?style=flat" alt="star">
+<img src="https://img.shields.io/github/last-commit/aidlearning/AidLearning-FrameWork?style=plastic" alt="commit">
+	
+  </p>
+</p>
+
+ **AidLearning** is a Linux system running on the Android with GUI, Deep-Learning and  Python Visual Programming support . The [AidLearning](http://www.aidlearning.net) framework which have the <b>Linux+Android+AI+Python 4in1</b> environments Developed and Maintained by several students from [Cas University](http://english.cas.cn) and [Yale University](https://www.yale.edu).
  
- **AidLearning** is a Linux system running on the Android with GUI, Deep-Learning and  Python Visual Programming support . The [AidLearning](http://www.aidlearning.net) framework which have the <b>Linux+Anroid+AI+Python 4in1</b> environments Developed and Maintained by several students from [Cas University](http://english.cas.cn) and [Yale University](https://www.yale.edu).
  ### Table of Contents
-- <a href='#Introduce'>introduce</a>
+- <a href='#Introduce'>Introduce</a>
 - <a href='#Dependencies'>Dependencies</a>
 - <a href='#Installation'>Installation</a>
 - <a href='#Support'>Support Powerfully</a>
 - <a href='#Touch_and_Drag_Programming'>Touch and Drag Style Programming </a>
-- <a href='#SSH'> SSH (pc connected)</a>
+- <a href='#SSH'>SSH (pc connected)</a>
 - <a href='#Aid_code'>Aid_code IDE of python</a>
 - <a href='#Examples'>Examples inside</a>
 - <a href='#references'>References</a>
+
 # Introduce
 
-[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](license.md)  / thank for <b>qidiso</b> provide the [中文说明](https://www.jianshu.com/p/f6ec13ece792)
+[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](license.md) 
 
-**AidLearning** builds a Linux system  on Android mobile phone, and supports **GUI**, **Python** and **AI** programming.This means that when it is installed, your Android phone has a Linux system in which you can run Gui programs of python and AI.  Now supports a list of Top Machine Learning Frameworks for Deep Learning: **Caffe, Tensorflow, Mxnet(and Gluoncv), ncnn, Keras, Pytorch, Opencv,Scipy** powerfully build-in!
+AidLearning App builds a ***graphical interface Linux*** system (without need root) **on Android phones** and coexists with your Android system.  The App has a built-in system of leading deep learning frameworks, including ***Caffe, Tensorflow, Mxnet, pytorch, keras, ncnn and opencv***. You no longer need complex configuration, wall-turning downloads and Install dependency packages.
 
-More Than this，we provide an AI coding develop tool named **Aid_code**. It can provide you a visual AI programming IDE by using Python from **zero** on our framework! It means that when it is installed, your Android phone owned a Linux system with GUI which can write and run AI program in it as same as in pc. In addition,Aid Learning can provide a new visual programming experience of **_touch-and-drag_** by using Python on our framework.
 
-At the same time, **AidLearning** provides wifi-based mapping projection technology, which can project the code of mobile phone to PC and interact with **SSH** remote commands and web online. It can also be projected to TV and projector for large screen display.
 
-In short, **AidLearning** has created a 4in1 and  touch-and-drag platform for rapid development and learning of **Android+Linux+AI+Python**. It can not only use mobile phones for fragmented programming, but also make full use of the development advantages of the two main operating systems (**Android+Linux**) and the perfect AI terminal advantages of mobile phones. With this advantage, **AidLearning** can build a perfect learning ecosphere of programming education.
+AidLearning is also a ***pocket AI programming tool***. The built-in AICode visual IDE allows you to easily program on your mobile phone with Python (supporting Python 2 and Python 3), support ***touch-and-drag*** interface design, support real-time debugging and graphical running of codes. AidLearning has a large number of AI source code examples, which include face recognition, pose recognition and classification. You can develop the AI App on mobile phones on a ***zero-based*** basis.
 
-![screen](image/Screen_11.jpg)
+In addition, AidLearning provides wifi-based mapping projection technology, which can project mobile phone code to PC for Web interactive programming and ***SSH*** remote command interaction.  Easy viewing on televisions and the ability to projector for large screen display, ensures the ability to present in group settings.
+
+Last,the new version 0.80 now surpport convert the py to App(android apk),with the buildin ApkBuild tools,you can published the python project to only one apk,it's very fun and business.
+
+In short, AidLearning has created a touch-and-drag programming platform for rapid development and learning that combines ***Android + Linux + AI  3IN1 environments***. It utilizes mobile phones for fragmented programming and fully optimizes use of the development advantages of the two major operating systems (Android + Linux) and the perfect terminal advantages of mobile phones. AidLearning  offers a distinct advantage to its users through an effective new platform for programming learning and development.
+
+
+
+<p align=center>
+<img src="image/01.jpeg"  width="260"/><img src="image/02.jpeg"  width="260"/><img src="image/03.jpeg"  width="260"/><img src="image/04.jpeg"  width="260"/><img src="image/05.jpeg"  width="260"/><img src="image/06.jpeg"  width="260"/>
+<img src="image/Screen_11.jpg" />
+
+</p>
+
+
+
+
 
 ## Dependencies
 
@@ -32,20 +69,23 @@ All you need is an Android devices (phone ,tablet or arm board)  that supports t
 ## Installation
 
 To install **AidLearing**, Simply download an App (apk file) and install it on your mobile device. download newest version at :
-[ Download v0.74 now!](http://www.aidlearning.net/downloads/aidlux-07-04.apk)  
+[ Download v0.80 now!](https://github.com/aidlearning/AidLearning-FrameWork/releases/download/v0.80/aidlux-0.80.apk)  
 Other version at:[https://github.com/aidlearning/AidLearning-FrameWork/releases](https://github.com/aidlearning/AidLearning-FrameWork/releases)
  
-The  APP （apk） is only 6M，when you install the apk  and launch,the apk will auto download the dependence of the linux and examples of codes . all is about 1G size to download .So it's recommended that you install it _in a wifi environment_.
+The  APP （apk） is only 9M，when you install the apk  and launch,the apk will auto download the dependence of the linux and examples of codes . all is about 1G size to download .So it's recommended that you install it _in a wifi environment_.
 
-**Important reminder:**  Click the setting icon after entering the desktop, the dialog box for the camera permission will pop up, please click agree, if you want to use the built-in examples.
+**Important reminder:**  Click the setting icon after entering the desktop, the dialog box for the camera permission will pop up, please click agree, if you want to use the built-in examples.<br>
 
-**New release**:
-[ Download v0.75 now!](http://www.aidlearning.net/downloads/aidlux-07-18.apk)  
-this is smaller size version,you can choose the ai framework for python 2/3(caffe/mxnet/tf/torch/keras) to install when u finished the install and launch the gui. the version all is about 650M dependence to download. so,the version can save your disk.
+[Download v0.80 for chinese version now!](https://github.com/aidlearning/AidLearning-FrameWork/releases/download/v0.80/aidlux-0.80.apk)
+
+
+
+
 
 ## Support
 ---
 Support AI Framework:
+![frame](image/frame.png)
   * [Caffe]https://github.com/BVLC/caffe
   * [Tensorflow]https://github.com/tensorflow/tensorflow
   * [Mxnet]https://github.com/apache/incubator-mxnet
@@ -103,8 +143,11 @@ class MyApp(App):
 
 ![drag_touch](image/drag_touch.png)
 <p align=center>
-<img src="Wizard.gif" width=400px />
+<img src="image/Wizard.gif" width=400px />
 </p>
+
+更多请阅读[Wizard-触摸拖拽式设计你的界面](https://github.com/aidlearning/AidLearning-FrameWork/blob/master/gui_wizard/README.md)
+
 ## SSH
 * PC can connect to mobile by using **ssh-keygen**. Generate a new key pair with <b>ssh-keygen</b> command in your PC.  the command ssh-keygen produce the file of id_rsa and id_rsa.pub in the dir: ~/.ssh/
 
@@ -128,10 +171,13 @@ You can open it on a PC, for example:
 http://192.168.1.8:8900/
 assume your phone's IP is 192.168.1.8, you can check your phone's IP by commanding ifconfig (run ifconfig command under terminal)
 ![sdcard](image/A15101DB465CDCCA18796F76D8121483.png)
-* New code auto-prompting function, if you input the initial letters of variables, functions and keywords, the system will <b>automatically complete</b> , which can greatly improve efficiency.
+* code IntelliSense: New code auto-prompting function, if you input the initial letters of variables, functions and keywords, the system will <b>automatically complete</b> , which can greatly improve efficiency.
 	<p align=center>
-          <img src="autocode.gif" width=300px />
+          <img src="image/autocode.gif" width=300px />
 	</p>
+
+深入了解Gui开发原理请阅读[cvs-强大的图形界面开发包](https://github.com/aidlearning/AidLearning-FrameWork/blob/master/gui_cvs/README.md)
+
 ## Files transfer
 
 * The sdcard directory on your Android phone has been mapped to the / sdcard directory under AidLearning
@@ -140,16 +186,28 @@ assume your phone's IP is 192.168.1.8, you can check your phone's IP by commandi
 
 ![sdcard](image/sdcardshow.png)
 
+* **Most Easy way:**
+ You just need to open the web address: IP of your mobile phone:8080/, when your PC and mobile phone are in the same LAN.
+You can open it on a PC, for example:
+http://192.168.1.8:8080/
+then hit the upload button to upload the pc file to your mobile,or hit the download button to download the files of mobile to the pc.
+![fileupload](image/fileupload.png)
+
 ## Examples
 ---Examples inside
-* Facencnn(mobiefacenet ncnn) 15fps in mobile phone (99.78% in LFW)
+* Facencnn(mobiefacenet ncnn) 15fps in mobile phone (99.83% in LFW)
 * Face Landmark (106 keypoints ncnn) 15fps  in mobile phone
 * handpose (tensorflow ) 5fps  in mobile phone
 * body posenet for single person(converted from google ) 10fps  in mobile phone
 * body posenet for multi-person(converted from google ) 7fps  in mobile phone
 * Stylized picture(GAN ) 3fps in mobile phone
 
-![examle](image/examle.png)
+![更多例子参考](images/examples.png)
+
+
+## Privacy Policy
+* Additional camera-based (camera) features: You can use this additional feature to capture camera video frames, making it easier to run python programs and view running results.
+* Mobile storage access: Our platform will read the package downloaded from the mobile phone, and users can download and use more third-party package.
 
 ## References
 
