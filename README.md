@@ -1,157 +1,102 @@
- ![](logo.png)
- 
- **AidLearning** is a Linux system running on the Android with GUI, Deep-Learning and  Python Visual Programming support . The [AidLearning](http://www.aidlearning.net) framework which have the <b>Linux+Anroid+AI+Python 4in1</b> environments Developed and Maintained by several students from [Cas University](http://english.cas.cn) and [Yale University](https://www.yale.edu).
- ### Table of Contents
-- <a href='#Introduce'>introduce</a>
-- <a href='#Dependencies'>Dependencies</a>
-- <a href='#Installation'>Installation</a>
-- <a href='#Support'>Support Powerfully</a>
-- <a href='#Touch_and_Drag_Programming'>Touch and Drag Style Programming </a>
-- <a href='#SSH'> SSH (pc connected)</a>
-- <a href='#Aid_code'>Aid_code IDE of python</a>
-- <a href='#Examples'>Examples inside</a>
-- <a href='#references'>References</a>
-# Introduce
-
-[![License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](license.md)  / thank for <b>qidiso</b> provide the [中文说明](https://www.jianshu.com/p/f6ec13ece792)
-
-**AidLearning** builds a Linux system  on Android mobile phone, and supports **GUI**, **Python** and **AI** programming.This means that when it is installed, your Android phone has a Linux system in which you can run Gui programs of python and AI.  Now supports a list of Top Machine Learning Frameworks for Deep Learning: **Caffe, Tensorflow, Mxnet(and Gluoncv), ncnn, Keras, Pytorch, Opencv,Scipy** powerfully build-in!
-
-More Than this，we provide an AI coding develop tool named **Aid_code**. It can provide you a visual AI programming IDE by using Python from **zero** on our framework! It means that when it is installed, your Android phone owned a Linux system with GUI which can write and run AI program in it as same as in pc. In addition,Aid Learning can provide a new visual programming experience of **_touch-and-drag_** by using Python on our framework.
-
-At the same time, **AidLearning** provides wifi-based mapping projection technology, which can project the code of mobile phone to PC and interact with **SSH** remote commands and web online. It can also be projected to TV and projector for large screen display.
-
-In short, **AidLearning** has created a 4in1 and  touch-and-drag platform for rapid development and learning of **Android+Linux+AI+Python**. It can not only use mobile phones for fragmented programming, but also make full use of the development advantages of the two main operating systems (**Android+Linux**) and the perfect AI terminal advantages of mobile phones. With this advantage, **AidLearning** can build a perfect learning ecosphere of programming education.
-
-![screen](image/Screen_11.jpg)
-
-## Dependencies
-
-All you need is an Android devices (phone ,tablet or arm board)  that supports the CPU of **Arm64(aarch64)**. The Android version requires more than 6.0. If you think the parameters are not clear enough, I would like to say that most of the mainstream mobile phones support it, such as _Samsung, Huawei, MI, OPPO, VIVO, nubia_ etc. In addition, the requirement of storage space is a little big. It is suggested that there should be **2G** free storage space.
-
-## Installation
-
-To install **AidLearing**, Simply download an App (apk file) and install it on your mobile device. download newest version at :
-[ Download v0.74 now!](http://www.aidlearning.net/downloads/aidlux-07-04.apk)  
-Other version at:[https://github.com/aidlearning/AidLearning-FrameWork/releases](https://github.com/aidlearning/AidLearning-FrameWork/releases)
- 
-The  APP （apk） is only 6M，when you install the apk  and launch,the apk will auto download the dependence of the linux and examples of codes . all is about 1G size to download .So it's recommended that you install it _in a wifi environment_.
-
-**Important reminder:**  Click the setting icon after entering the desktop, the dialog box for the camera permission will pop up, please click agree, if you want to use the built-in examples.
-
-**New release**:
-[ Download v0.75 now!](http://www.aidlearning.net/downloads/aidlux-07-18.apk)  
-this is smaller size version,you can choose the ai framework for python 2/3(caffe/mxnet/tf/torch/keras) to install when u finished the install and launch the gui. the version all is about 650M dependence to download. so,the version can save your disk.
-
-## Support
----
-Support AI Framework:
-  * [Caffe]https://github.com/BVLC/caffe
-  * [Tensorflow]https://github.com/tensorflow/tensorflow
-  * [Mxnet]https://github.com/apache/incubator-mxnet
-  * [Keras]https://github.com/keras-team/keras
-  * [ncnn]https://github.com/Tencent/ncnn
-  * [pytorch]https://github.com/pytorch/pytorch
-  * [opencv]https://github.com/opencv/opencv
----
-
-Support Python2.7 and Python3.6.4:
-
-| AidLearning      | Python2.7    |  Python3.6|
-| --------- | -------- | -----: | 
-| caffe    | ✓1.0.0 | ✓ 1.0.0| 
-| mxnet     | ✓1.0.0     |   ✓1.5.0 | 
-| tensorflow     | ✓1.10.0     |   ✓1.5.0 | 
-| Gluoncv     | ✗  | ✓ 0.40|
-| Keras | ✓2.2.4 | ✓2.2.4 |
-| Pytorch |  ✗ | ✓1.1.0 |
-| Opencv(cv2) | ✓2.4.9 | ✓3.4.6 |
-| Scipy | ✓0.18.1 | ✓1.3.0 |
-| Numpy | ✓1.14.5 | ✓1.16.3 |
-
-![screen](image/Aiframe.png)
-
-## Touch_and_Drag_Programming 
-
-Now you can easily customize your GUI with touch and drag using wizard！Wizard will produce the code automatic like this:
-
-```
-class MyApp(App):
- 	def __init__(self, *args):
-  		super(MyApp, self).__init__(*args)
-
-	def main(self):
-		container = gui.VBox(width=120, height=100)
-		self.lbl = gui.Label('Hello world!')
-		self.bt = gui.Button('Press me!')
-
-	    # setting the listener for the onclick event of the button
-		self.bt.onclick.do(self.on_button_pressed)
-
-	    # appending a widget to another, the first argument is a string key
-		container.append(self.lbl)
-		container.append(self.bt)
-
-	    # returning the root widget
-		return container
-
-        #listener function
-	def on_button_pressed(self, widget):
-		self.lbl.set_text('Button pressed!')
-		self.bt.set_text('Hi!')
-```
-
-![drag_touch](image/drag_touch.png)
-<p align=center>
-<img src="Wizard.gif" width=400px />
+<a href="https://www.bilibili.com/video/BV1p3411x7iX" target="_blank"><img src="https://aidlux.com/logo.svg" width="100%" ></a>
+<p align="center"><a href="https://www.bilibili.com/video/BV1p3411x7iX" target="_blank">AidLux 1.3 正式发布！(观看视频⬆️📺)</a></p>
+<p align="center">
+  AI，Android，Linux，ARM：基于Android+Linux融合生态的AI应用开发平台。 <a href='README-en.md'>[English]</a>
 </p>
-## SSH
-* PC can connect to mobile by using **ssh-keygen**. Generate a new key pair with <b>ssh-keygen</b> command in your PC.  the command ssh-keygen produce the file of id_rsa and id_rsa.pub in the dir: ~/.ssh/
+<p align="center">
+  <a href="https://travis-ci.org/lc-soft/LCUI"><img src="https://travis-ci.org/lc-soft/LCUI.png?branch=master" alt="Build Status"></a>
+  <img src="https://img.shields.io/badge/coverage-100%25-brightgreen" alt="Coverage Status">
+  <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/lc-soft/LCUI.svg" alt="License"></a>
+  <a href="https://github.com/aidlearning/AidLearning-FrameWork/releases">
+  <img src="https://img.shields.io/github/v/tag/aidlearning/AidLearning-FrameWork" > </a>
+<img src="https://img.shields.io/github/forks/aidlearning/AidLearning-FrameWork?style=flat" alt="Fork">
+<img src="https://img.shields.io/github/stars/aidlearning/AidLearning-FrameWork?style=flat" alt="star">
+<img src="https://img.shields.io/github/last-commit/aidlearning/AidLearning-FrameWork?style=plastic" alt="commit">
+</p>
+[AidLux](https://docs.aidlux.com) 是一个基于ARM构建，同时支持多生态融合（Android+Linux）环境的AI应用开发和部署平台，为开发者带来强大、简单、无限创意可能的奇妙体验！ 
+<img src="https://docs.aidlux.com/intro/images/linux应用01.png" alt="AidLux" width="100%">
 
-* Just need you do: open the url:mobilephone'sip:8910/upload(for example:http://192.168.1.6:8910/upload)  on the pc to upload ssh's file(id_rsa and id_rsa.pub). 
+## AidLux融合架构，实现多生态超级叠加 
 
-![sdcard](image/ssh.png)
+<img src="https://aidlux.com/platform/double-system.png" alt="AidLux融合架构" width="70%"> 
 
-* upload finished , just restart the app on the android ,open the terminal the type this command like this to connect:
+通过共享Android Linux kernel构建了完整的Linux系统环境，并且与Android系统环境同时提供用户访问。在为用户提供和原生Linux系统类似的命令行使用体验（如通过 `apt` 命令进行包管理）的同时，基于Web构建了图形化桌面环境，用户可以直接通过触摸屏或浏览器访问。 
 
-```
-ssh u0_a311@192.168.1.6 -p8022
-```
+AidLux补全了AI运行所需的所有基础科学计算包/库，支持了业界主流深度学习框架，并内置自主研发的AI智能加速技术，为开发者提供了一个“AI 就绪”的应用开发平台。 
 
-## Aid_code
+-----
 
-* We provide an AI coding develop tool named **Aid_code**. It can provide you a visual AI programming IDE by using Python from zero on our framework! Using the tool, you can run your python2 or python3 codes online. So ,you can coding with Aid_code IDE on your phone anywhere, anytime. 
+### Android+Linux 共生, 1+1>2 
 
-![sdcard](image/Screenshot_2019-07-06-12-21-02-38.png)
-* Of course, you can use Aid_code on the web to edit your code online. For example, you can use web coding with Aid_code on PC. You just need to open the web address: IP of your mobile phone:8900/, when your PC and mobile phone are in the same LAN.
-You can open it on a PC, for example:
-http://192.168.1.8:8900/
-assume your phone's IP is 192.168.1.8, you can check your phone's IP by commanding ifconfig (run ifconfig command under terminal)
-![sdcard](image/A15101DB465CDCCA18796F76D8121483.png)
-* New code auto-prompting function, if you input the initial letters of variables, functions and keywords, the system will <b>automatically complete</b> , which can greatly improve efficiency.
-	<p align=center>
-          <img src="autocode.gif" width=300px />
-	</p>
-## Files transfer
+* 一部设备同时运行两个系统环境，既是一部Android设备，同时也是一部Linux设备。两个生态的资源优势可同时被加以利用。 
 
-* The sdcard directory on your Android phone has been mapped to the / sdcard directory under AidLearning
+* 跨系统无缝交互，高效，安全，稳定。Android应用与Linux应用实现本地高效直接访问，无需外部接口（如网络），充分释放硬件效能。 Android负责用户交互，Linux负责服务支持的新型应用形态等待你的奇思妙想。
 
-* If you install QQ Instant Messaging Tool, the file directory transferred through QQ is mapped to / sdcard / Tencent / QQfile_recv / directory.
+* 针对已有应用（Android或Linux），可轻松获得跨系统功能支持，使应用功能更加强大，充分保护已有开发投入。 
 
-![sdcard](image/sdcardshow.png)
+* 一键安装、自动部署、App式启动，过程快速、简单。 
 
-## Examples
----Examples inside
-* Facencnn(mobiefacenet ncnn) 15fps in mobile phone (99.78% in LFW)
-* Face Landmark (106 keypoints ncnn) 15fps  in mobile phone
-* handpose (tensorflow ) 5fps  in mobile phone
-* body posenet for single person(converted from google ) 10fps  in mobile phone
-* body posenet for multi-person(converted from google ) 7fps  in mobile phone
-* Stylized picture(GAN ) 3fps in mobile phone
 
-![examle](image/examle.png)
+---
 
-## References
+### 低AI开发门槛, 快速、简单、极致性能
+
+* 集成业界主流AI深度学习框架，无需配置，安装即用，极大的降低了AI开发和应用部署的环境配置复杂度，大幅减少了相关的时间投入。 框架支持如下：
+  |TensorFlow|PyTorch|Caffe|MXNet|Keras|MindSpore|PandlePandle|TNN|MNN|SNPE|
+  |:---:|:----:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+  |√|√|√|√|√|√|√|√|√|√| 
+  
+* 内置创新性的CPU+GPU+NPU智能加速技术，通过“硬件+框架+Op"多层优化，赋予深度学习运算性能的大幅度提升。并且提供统一API接口，在方便开发者调用的同时，还支持不同AI框架模型自动转换。以下测试为基于相同ARM设备，在Linux、AidLux上测试获得。单项测试进行20次取耗时（纵轴）平均值。
+
+* 在Wizard中进行拖拽式AI应用开发，AI组件快速赋能，1分钟生成你的第一个AI应用！ 
+
+* 内置丰富AI应用案例及对应代码，方便开发者能快速入门。
+
+----
+
+### 便携、开放、一站式
+* AidLux 云桌面系统，支持从PC, 平板, 手机等多种屏幕随时随地同时访问，实现你的超级移动开发平台。 快通过PC上的浏览器，输入云桌面地址，访问你手机上的AidLux桌面吧！
+
+* 海量外设轻松支持(网络、USB、串口、...)，创意空间无限扩展。 
+
+* 支持VSCode, Jupyter notebook 等多种开源开发工具及Python, C/C++, Java, JavaScript等开发语言。 
+
+* 一站式开发、测试、部署全流程支持，AidLux关注效率，您关注创意！ `ApkBuild`应用，可以快速将基于Python开发的项目打包成APK进行发布，方便用户在其它Android系统进行部署。
+
+----
+
+#### 目前，AidLux已在各大App应用中心上线，下载启动次数200万+。
+
+
+## 开始使用
+点击以下链接即可下载最新的安装包
+[【AidLux v1.3.0】](https://aidlux.com/apk/AidLux.apk) 
+
+- [双系统融合](https://aidlux.com/platform)
+- [AI工具链](https://aidlux.com/platform/core-technology)
+- [开发文档](https://docs.aidlux.com/)
+- [开发社区](https://community.aidlux.com)
+- [AI示例代码](https://aidlux.com/examples/#/)
+
+
+## 贡献与参与
+
+- [贡献代码](https://www.aidlearning.net/showdoc/web/#/5?page_id=39)
+- [系统扩展](https://www.aidlearning.net/showdoc/web/#/5?page_id=38)
+- [更新日志](https://docs.aidlux.com/#/changelog)
+
+<details>
+<summary>QQ交流群</summary>
+<img src="https://i.loli.net/2020/04/11/TtfxFj2rnkB7ZVM.png" height="256"/>
+</details>
+
+## License
+- [GPL 3.0](license.md)
+
+## 致谢
+AidLux参与人员：bill、flay、gondon、willam、gugu、yoline777、qidiso、yuge、muzi_ys等。
+
+下列项目：
 
 * VTE (libvte): Terminal emulator widget for GTK+, mainly used in gnome-terminal. [Source](https://github.com/GNOME/vte), [Open Issues](https://bugzilla.gnome.org/buglist.cgi?quicksearch=product%3A%22vte%22+), and [All (including closed) issues](https://bugzilla.gnome.org/buglist.cgi?bug_status=RESOLVED&bug_status=VERIFIED&chfield=resolution&chfieldfrom=-2000d&chfieldvalue=FIXED&product=vte&resolution=FIXED).
 * iTerm 2: OS X terminal application. [Source](https://github.com/gnachman/iTerm2), [Issues](https://gitlab.com/gnachman/iterm2/issues) and [Documentation](http://www.iterm2.com/documentation.html) (which includes [iTerm2 proprietary escape codes](http://www.iterm2.com/documentation-escape-codes.html)).
@@ -161,12 +106,12 @@ assume your phone's IP is 192.168.1.8, you can check your phone's IP by commandi
 * Connectbot: Android SSH client. [Source](https://github.com/connectbot/connectbot)
 * Android Terminal Emulator: Android terminal app which Termux terminal handling is based on. Inactive. [Source](https://github.com/jackpal/Android-Terminal-Emulator).
 * Termux: Android terminal and Linux environment - app repository. [Source](https://github.com/termux/termux-app).
-* remi:Python REMote Interface library. Platform independent. In about 100 Kbytes, perfect for your diet.[Source]
-(https://github.com/dddomodossola/remi).
-* [Caffe]https://github.com/BVLC/caffe
-* [Tensorflow]https://github.com/tensorflow/tensorflow
-* [Mxnet]https://github.com/apache/incubator-mxnet
-* [Keras]https://github.com/keras-team/keras
-* [ncnn]https://github.com/Tencent/ncnn
-* [pytorch]https://github.com/pytorch/pytorch
-* [opencv]https://github.com/opencv/opencv
+* remi:Python REMote Interface library. Platform independent. In about 100 Kbytes, perfect for your diet.[Source](https://github.com/dddomodossola/remi).
+* [Caffe](https://github.com/BVLC/caffe)
+* [Tensorflow](https://github.com/tensorflow/tensorflow)
+* [Mxnet](https://github.com/apache/incubator-mxnet)
+* [Keras](https://github.com/keras-team/keras)
+* [ncnn](https://github.com/Tencent/ncnn)
+* [pytorch](https://github.com/pytorch/pytorch)
+* [opencv](https://github.com/opencv/opencv)
+* [macUI](https://github.com/1099438829/macUI)
